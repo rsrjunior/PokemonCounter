@@ -13,7 +13,6 @@ namespace PokemonCounterApp
 
             if (args.Length > 0)
             {
-                Console.WriteLine("Arquivo {0}", args[0]);
                 try
                 {
                     using (StreamReader sr = new StreamReader(args[0]))
