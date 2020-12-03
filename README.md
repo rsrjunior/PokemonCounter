@@ -3,10 +3,10 @@ PokemonCounter: count distinct problem
 
 ## Version 1.0: Fonte de verdade
 
-###Versão funcional, com performance O(n).
-####Memória O(n) será um problema para datasets grandes.
-####Serve como ponto de partida para as otimizações, pois se trata de um cálculo de cardinalidade exata.
-####O resultado do processamento aqui pode ser considerado como verdade absoluta para testes com as futuras otimizações.
+### Versão funcional, com performance O(n).
+#### Memória O(n) será um problema para datasets grandes.
+#### Serve como ponto de partida para as otimizações, pois se trata de um cálculo de cardinalidade exata.
+#### O resultado do processamento aqui pode ser considerado como verdade absoluta para testes com as futuras otimizações.
 
 ## v1.1 Take a shortcut with RegEX
 
