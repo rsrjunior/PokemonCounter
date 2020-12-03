@@ -24,5 +24,10 @@ PokemonCounter: count distinct problem
 #### v1.0 Pico de Memoria: 1.6G, Tempo: 45s.
 #### v1.1 Pico de Memoria: 150M, Tempo: 12s.
 
+## Instruções
+### dotnet core 3.1
+### dotnet build e dotnet run [arquivo] para o projeto PokemonCounterApp
+### dotnet test para o projeto PokemonCounterTests
+### arquivos de teste na pasta PokemonCounterTests/assets
 
 
