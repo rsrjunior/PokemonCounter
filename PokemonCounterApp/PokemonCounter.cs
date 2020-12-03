@@ -12,7 +12,7 @@ namespace PokemonCounterApp
         pokeBall = new HashSet<string>();
         pokeBall.Add(currentPos.ToString());
     }
-    public long Count => pokeBall.Count;
+    public int Count => pokeBall.Count;
     public int ProcessChar(char direction)
     {
         int pokemon = 0;
@@ -24,7 +24,7 @@ namespace PokemonCounterApp
         }
         return pokemon;
     }
-    public long ProcessLine(string movements)
+    public int ProcessLine(string movements)
     {
         int pokemons = 0;
         foreach (char direction in movements)
