@@ -3,16 +3,17 @@ namespace PokemonCounterApp
 {
     public class PokemonCounter
 {
+    public int Count { get; private set;}
     private HashSet<string> pokeBall;
 
     private AshCoordinates currentPos;
     public PokemonCounter()
     {
+        Count = 1;
         currentPos = new AshCoordinates(0,0);
         pokeBall = new HashSet<string>();
         pokeBall.Add(currentPos.ToString());
     }
-    public int Count => pokeBall.Count;
     public int ProcessChar(char direction)
     {
         int pokemon = 0;
@@ -20,7 +21,10 @@ namespace PokemonCounterApp
         {
             currentPos.Move(direction);
             if(pokeBall.Add(currentPos.ToString()))
+            {
                 pokemon = 1;
+                Count++;
+            }
         }
         return pokemon;
     }
