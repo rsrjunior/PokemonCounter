@@ -17,6 +17,7 @@ namespace PokemonCounterApp
             pokeBall.Add(currentPos.ToString());
             oneDirectionRegex = new List<string>(5);
             oneDirectionRegex.Add("^E+$|^O+$|^N+$|^S+$");
+            oneDirectionRegex.Add("^(E*S+O*S+)+$");
         }
         public int ProcessChar(char direction)
         {
