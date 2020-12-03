@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
 namespace PokemonCounterApp
 {
     public class PokemonCounter
@@ -31,6 +33,15 @@ namespace PokemonCounterApp
     public int ProcessLine(string movements)
     {
         int pokemons = 0;
+
+        Match m = Regex.Match(movements,"^E+$|^O+$|^N+$|^S+$");
+        if(m.Success)
+        {
+            Count+=movements.Length;
+            pokemons+=movements.Length;
+            movements = "";
+        }
+
         foreach (char direction in movements)
         {
             pokemons += ProcessChar(direction); 
